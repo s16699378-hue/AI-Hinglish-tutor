@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start NCERT Hinglish AI",
+            "type": "process",
+            "command": "${workspaceFolder}\\..\\.venv\\Scripts\\python.exe",
+            "args": [
+                "-m",
+                "streamlit",
+                "run",
+                "${workspaceFolder}\\NCERT_Hinglish_AI\\app.py",
+                "--server.address",
+                "127.0.0.1",
+                "--server.port",
+                "8501"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "isBackground": true,
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
